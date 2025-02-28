@@ -1,0 +1,17 @@
+Even Characters first and Odd Characters reversed
+Given a string, return a string with the characters in the even indices first and the characters in the odd indices next but in reversed order.
+
+Example For the input "abcde",
+
+even chars = "ace"
+odd chars = "bd"; odd chars reversed = "db"
+result = "acedb"
+
+---------------------------------------------------------------- ANSWER ------------------------------------------------------------------------------------
+
+
+def even_first_odd_reversed(s: str) -> str:
+    even=s[::2]
+    odd =s[1::2]
+    rev_odd=odd[-1::-1]
+    return even+rev_odd
