@@ -1,0 +1,20 @@
+Arithmetic Operations tuple from two integers
+Given a tuple of two integers (a, b), return a tuple containing the sum, difference, product, and quotient (integer division) of the two numbers.
+
+Example:
+
+>>> arithmetic_operations((1, 2))
+(3, -1, 2, 0)
+
+--------------------------------------------------------- ANSWER ------------------------------------------------------------------------------------------
+
+def arithmetic_operations(t: tuple) -> tuple:
+    a=t[0]
+    b=t[1]
+    sum_=a+b
+    difference = a-b
+    product = a*b
+    quotient = int(a/b if b!=0 else None)
+    return (sum_,difference,product,quotient)
+     
+    
