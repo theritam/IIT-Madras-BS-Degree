@@ -1,0 +1,27 @@
+Palindrome Integer
+Given an integer, check whether it is a palindrome. A palindrome is a number or a string that reads the same backward as forward.
+
+Assume the numbers are positive.
+
+Example
+
+is_palindrome(121) == True
+is_palindrome(123) == False
+is_palindrome(1212) == False
+
+-------------------------------------------------------- ANSWER ------------------------------------------------------------------------------------------------
+
+def is_palindrome(n: int) -> bool:
+    num=n
+    rev=n%10
+    n = n//10
+    while n > 0:
+        r=n%10
+        n=n//10
+        rev = rev*10+r
+    if rev == num:
+        return True
+    else:
+        return False
+    
+
