@@ -14,3 +14,5 @@ def is_right_triangle_with_even_sides(a:int,b:int,c:int) -> bool:
             return False
     else:
         return False
+
+
