@@ -1,0 +1,16 @@
+Find Manhattan distance between two 2d points through a point
+Given three points a, b, and c on the Cartesian plane, calculate the Manhattan distance to go from point a to point c via point b.
+
+Manhattan distance is the sum of the absolute differences of their Cartesian coordinates.
+
+----------------------------------------------------------------------ANSWER-------------------------------------------------------------------------------------------
+
+def manhattan_distance_via_b(a: tuple, b: tuple, c: tuple) -> int:
+    x1=a[0]    
+    y1=a[1]
+    x2=b[0]
+    y2=b[1]
+    x3=c[0]
+    y3=c[1]
+    distance =abs(x2-x1)+abs(y2-y1)+abs(x3-x2)+abs(y3-y2)
+    return distance
