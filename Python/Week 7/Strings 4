@@ -1,0 +1,19 @@
+Remove First two and Last two Chars from a string
+Given a string s, return a new string with the first two and last two characters removed.
+
+If the string has less than four characters return an empty string.
+
+Example
+
+s = 'HelloWorld'
+Removing the first two and last two characters results in 'lloWor'
+
+------------------------------------------------------------------------------ANSWER----------------------------------------------------------------------------------
+
+def remove_edges(s: str) -> str:
+    k=''
+    for i in s[2:-2:]:
+            k=k+i
+    return k    
+        
+            
