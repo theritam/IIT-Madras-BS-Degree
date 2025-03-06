@@ -1,0 +1,14 @@
+Number of unique common digits between two integers
+Given two integers, return the number of unique digits that are common in both numbers.
+
+Eg, 287498,295424 - 2, 4 and 9 are common to both nums so answer is 3
+
+-----------------------------------------------------------------------------ANSWER---------------------------------------------------------------------------------
+
+def number_of_unique_common_digits(n1: int, n2: int) -> int:
+    s1=set(str(n1))
+    s2=set(str(n2))
+    
+    c= s1 & s2
+    return len(c)
+    
