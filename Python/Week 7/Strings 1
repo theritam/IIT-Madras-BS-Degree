@@ -1,0 +1,16 @@
+Check if all the odd indices are alphabets and even indices are digits
+Given a string, check if all the odd indices are alphabets and the even indices are digits.
+
+-----------------------------------------------------------------------ANSWER--------------------------------------------------------------------------------------
+
+def is_odd_indices_alpha_and_even_indices_digits(string: str) -> bool:
+    for i,char in enumerate(string):
+        if i % 2==0:
+            if not char.isdigit():
+                return False
+        else:
+            if not char.isalpha():
+                return False
+    return True            
+                
+            
